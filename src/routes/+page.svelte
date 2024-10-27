@@ -75,5 +75,8 @@
     .right-column {
         grid-row: 1 / span 3;
         grid-column: 3 / span 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 </style>
