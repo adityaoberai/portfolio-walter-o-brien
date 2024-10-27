@@ -12,34 +12,42 @@
     <title>Walter O'Brien</title>
 </svelte:head>
 
-<div class="intro-content">
-    <Intro />
-</div>
-<div class="resume-content">
-    <div class="available-component">
-        <Available />
+<main>
+    <div class="intro-content">
+        <Intro />
     </div>
-    <div class="about-component">
-        <About />
-    </div>
-    <div class="experience-component">
-        <Experience />
-    </div>
-
-    <div class="right-column">
-        <div class="skills-component">
-            <Skills />
+    <div class="resume-content">
+        <div class="available-component">
+            <Available />
         </div>
-        <div class="projects-component">
-            <Projects />
+        <div class="about-component">
+            <About />
         </div>
-        <div class="articles-component">
-            <Articles />
+        <div class="experience-component">
+            <Experience />
+        </div>
+    
+        <div class="right-column">
+            <div class="skills-component">
+                <Skills />
+            </div>
+            <div class="projects-component">
+                <Projects />
+            </div>
+            <div class="articles-component">
+                <Articles />
+            </div>
         </div>
     </div>
-</div>
+</main>
 
 <style>
+    main {
+        width: 100%;
+        height: 100%;
+        margin: 2rem 0;
+    }
+
     .intro-content, .resume-content {
         width: 80%;
         margin: 0 auto;
@@ -53,8 +61,8 @@
 
     .resume-content {
         display: grid;
-        row-gap: 2rem;
-        column-gap: 2rem;
+        row-gap: 1rem;
+        column-gap: 1rem;
     }
     
     .available-component {
@@ -78,5 +86,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 1rem;
     }
 </style>

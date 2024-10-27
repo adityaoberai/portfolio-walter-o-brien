@@ -16,7 +16,8 @@
     <div class="social-buttons">
         <Button.Button variant="secondary" size="medium">
             <IconLinkedin />
-            LinkedIn</Button.Button>
+            LinkedIn
+        </Button.Button>
         <Button.Button variant="secondary" size="medium">
             <IconGithub />
             GitHub

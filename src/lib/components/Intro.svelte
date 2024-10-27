@@ -1,6 +1,6 @@
 <script>
     import { Avatar, Typography, Divider } from '@appwrite.io/pink-svelte';
-    import Profile from '$lib/images/profile.webp';
+    import Profile from '$lib/images/Profile.png';
 </script>
 
 <section id="intro">
@@ -25,6 +25,8 @@
         gap: 1rem;
         align-items: start;
         width: 100%;
+        gap: 1rem;
+        margin-bottom: 2rem;
     }
 
     .intro-content {

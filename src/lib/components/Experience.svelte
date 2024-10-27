@@ -64,26 +64,34 @@
 </section>
 
 <style>
+    #experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     .jobs {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         width: 100%;
+        min-height: 80%;
+        justify-content: space-evenly;
     }
     
     .job {
         display: flex;
         flex-direction: row;
-        gap: 2rem;
+        gap: 1rem;
         justify-content: space-between;
     }
 
     .time {
-        max-width: 50%;
+        width: 33.33%;
     }
 
     .info {
-        max-width: 50%;
+        width: 66.67%;
         justify-content: start;
     }
 
