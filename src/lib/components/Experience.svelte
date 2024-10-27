@@ -34,11 +34,9 @@
 </script>
 
 <section id="experience" class="container">
-    <h3>
-        <Typography.Title size="large">
-            Experience
-        </Typography.Title>
-    </h3>
+    <Typography.Title size="medium">
+        Experience
+    </Typography.Title>
     <div class="jobs">
     {#each experiences as { title, company, date, description }}
         <div class="job">
@@ -51,9 +49,9 @@
                 <Typography.Title size="small">
                         {company}
                 </Typography.Title>
-                <p>
-                    <Typography.Text variant="m-500">{title}</Typography.Text>
-                </p>
+                <Typography.Text variant="m-500">
+                    {title}
+                </Typography.Text>
                 <ul>
                     {#each description as desc}
                         <li>{desc}</li>
@@ -66,11 +64,6 @@
 </section>
 
 <style>
-    #experience {
-        width: 100%;
-        max-width: 100%;
-    }
-
     .jobs {
         display: flex;
         flex-direction: column;

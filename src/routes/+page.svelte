@@ -12,89 +12,68 @@
     <title>Walter O'Brien</title>
 </svelte:head>
 
-<main>
-    <div class="intro-content">
-        <Intro />
+<div class="intro-content">
+    <Intro />
+</div>
+<div class="resume-content">
+    <div class="available-component">
+        <Available />
     </div>
-    <div class="resume-content">
-        <div class="left-column">
-            <div class="left-inner-top">
-                <div class="left-inner-top-inner-column">
-                    <Available />
-                </div>
-                <div class="left-inner-top-inner-column">
-                    <About />
-                </div>
-            </div>
-            <div class="left-inner-bottom">
-                <Experience />
-            </div>
+    <div class="about-component">
+        <About />
+    </div>
+    <div class="experience-component">
+        <Experience />
+    </div>
+
+    <div class="right-column">
+        <div class="skills-component">
+            <Skills />
         </div>
-    
-        <div class="right-column">
-            <div class="right-inner-top">
-                <Skills />
-            </div>
-            <div class="right-inner-middle">
-                <Projects />
-            </div>
-            <div class="right-inner-bottom">
-                <Articles />
-            </div>
+        <div class="projects-component">
+            <Projects />
+        </div>
+        <div class="articles-component">
+            <Articles />
         </div>
     </div>
-</main>
+</div>
 
 <style>
     .intro-content, .resume-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .intro-content {
         display: flex;
         flex-direction: row;
-        gap: 2rem;
-        width: 90%;
-        margin: 0 auto;
         height: max-content;
     }
 
     .resume-content {
-        justify-content: space-evenly;
+        display: grid;
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+    
+    .available-component {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
     }
 
-    .left-column {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        width: 60%;
+    .about-component {
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
     }
 
-    .left-inner-top {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: auto;
-        height: 35%;
-        align-content: stretch;
-    }
-
-    .left-inner-top-inner-column 
-    {
-        display: flex;
-        flex-direction: column;
-        width: 45%;
-        height: 100%;
-    }
-
-    .left-inner-bottom {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        align-content: stretch;
+    .experience-component {
+        grid-row: 2 / span 2;
+        grid-column: 1 / span 2;
     }
 
     .right-column {
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-        justify-content: space-between;
+        grid-row: 1 / span 3;
+        grid-column: 3 / span 1;
     }
 </style>
