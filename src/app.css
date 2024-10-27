@@ -12,7 +12,7 @@ html {
 
 body {
 	width: 100vw;
-	height: 100%;
+	min-height: 100vh;
 	background-color: var(--color-bgcolor-neutral-default);
 	margin: 0;
 	padding: 0;
@@ -35,9 +35,17 @@ body {
 
 h1,
 h2,
-h3,
 h4 {
 	color: var(--color-fgcolor-neutral-primary);
+    font-weight: 500!important;
+}
+
+h3 {
+    color: #FFF;
+}
+
+p {
+    font-weight: 400!important;
 }
 
 h1,
@@ -46,12 +54,18 @@ h3,
 h4,
 p {
 	text-wrap: auto;
+    font-size: 14px!important;
 	margin: 0;
 }
 
 .card > p,
 .card > h4 {
 	text-align: left;
+}
+
+#about > p,
+.card > p {
+    color: var(--color-fgcolor-neutral-secondary);
 }
 
 .job > .time > p,
@@ -62,4 +76,13 @@ p {
 
 hr {
 	color: var(--color-border-neutral);
+}
+
+#about > p, .jobs {
+    flex-grow: 2;
+}
+
+#about > p {
+    display: flex;
+    justify-self: stretch;
 }

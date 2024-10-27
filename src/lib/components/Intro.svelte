@@ -5,7 +5,7 @@
 
 <section id="intro">
 	<div class="intro-content">
-		<Avatar src={Profile} size="x-large" alt="Temporary display picture" />
+		<Avatar src={Profile} alt="Temporary display picture" />
 		<div class="intro-content-text">
 			<Typography.Title size="x-large">Walter O'Brien</Typography.Title>
 			<Typography.Title size="large">Technology Entrepreneur</Typography.Title>

@@ -45,7 +45,7 @@
 	main {
 		width: 100%;
 		height: 100%;
-		margin: 2rem 0;
+        margin: auto 0;
 	}
 
 	.intro-content,
@@ -62,8 +62,10 @@
 
 	.resume-content {
 		display: grid;
-		row-gap: 1rem;
-		column-gap: 1rem;
+        grid-template-rows: 0.8fr 2.2fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 1.25rem;
+		column-gap: 1.25rem;
 	}
 
 	.available-component {
