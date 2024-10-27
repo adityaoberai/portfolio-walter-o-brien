@@ -1,5 +1,11 @@
 <script>
     import '../app.css';
+    import { Root } from '@appwrite.io/pink-svelte';
+    import { ThemeDark } from '$lib/themes';
+    import { browser } from '$app/environment';
 </script>
-
-<slot />
+{#if browser}
+<Root theme={ThemeDark}>
+    <slot />
+</Root>
+{/if}
