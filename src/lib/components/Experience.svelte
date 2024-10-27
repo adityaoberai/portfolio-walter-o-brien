@@ -5,7 +5,7 @@
 		{
 			title: 'CEO',
 			company: 'Scorpion Computer Services',
-			date: '1998 - Present',
+			date: '1998 — Present',
 			description: [
 				'Founded and grew Scorpion into a global consulting firm.',
 				'Provides high-stakes problem-solving for Fortune 500 companies and government agencies.',
@@ -15,7 +15,7 @@
 		{
 			title: 'Contributor',
 			company: 'Think Tanks',
-			date: '2010 - Present',
+			date: '2010 — Present',
 			description: [
 				'Supports private and public sectors with high-level policy and strategy contributions.',
 				'Advises on strengthening security measures and technological infrastructure for large organizations.'
@@ -24,7 +24,7 @@
 		{
 			title: 'Cybersecurity and Intelligence Advisor',
 			company: 'Miscellaneous Projects',
-			date: '2008 - Present',
+			date: '2008 — Present',
 			description: [
 				'Advises on cybersecurity strategies for military and governmental entities.',
 				'Protects sensitive data by developing advanced strategies to counteract cyber threats.'
@@ -44,12 +44,14 @@
 					</Typography.Text>
 				</div>
 				<div class="info">
-					<Typography.Title size="small">
-						{company}
-					</Typography.Title>
-					<Typography.Text variant="m-500">
-						{title}
-					</Typography.Text>
+					<div class="info-text">
+                        <Typography.Title size="small">
+                            {company}
+                        </Typography.Title>
+                        <Typography.Text variant="m-500">
+                            {title}
+                        </Typography.Text>
+                    </div>
 					<ul>
 						{#each description as desc}
 							<li>{desc}</li>
@@ -65,16 +67,17 @@
 	#experience {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+        justify-content: start;
 	}
 
 	.jobs {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: 1.5rem;
 		width: 100%;
-		min-height: 80%;
-		justify-content: space-evenly;
+		justify-content: start;
+        align-items: stretch;
+        justify-items: stretch;
 	}
 
 	.job {
@@ -82,6 +85,7 @@
 		flex-direction: row;
 		gap: 1rem;
 		justify-content: space-between;
+        margin-bottom: 0.5rem;
 	}
 
 	.time {
@@ -89,9 +93,18 @@
 	}
 
 	.info {
+        display: flex;
+        flex-direction: column;
 		width: 66.67%;
 		justify-content: start;
+        gap: 0.75rem;
 	}
+
+    .info-text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
 
 	ul {
 		list-style-type: disc;
