@@ -4,12 +4,14 @@
 </script>
 
 <section id="available" class="container">
-    <Typography.Title size="medium">
-        <span>●</span>
-        Available for new projects
-    </Typography.Title>
-
-    <Typography.Text variant="l-500">Available for new partnerships and collaborations. Let's chat!</Typography.Text>
+    <div class="content">
+        <Typography.Title size="medium">
+            <span>●</span>
+            Available for new projects
+        </Typography.Title>
+    
+        <Typography.Text variant="l-500">Available for new partnerships and collaborations. Let's chat!</Typography.Text>
+    </div>
 
     <div class="social-buttons">
         <Button.Button variant="secondary" size="medium">
@@ -23,6 +25,20 @@
 </section>
 
 <style>
+    #available {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-self: stretch;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     span {
         color: var(--color-bgcolor-success);
     }

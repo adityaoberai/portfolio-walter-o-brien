@@ -66,10 +66,15 @@
 </section>
 
 <style>
+    #experience {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .jobs {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
         width: 100%;
     }
     
@@ -77,14 +82,16 @@
         display: flex;
         flex-direction: row;
         gap: 2rem;
+        justify-content: space-between;
     }
 
     .time {
-        width: 20%;
+        max-width: 50%;
     }
 
     .info {
-        width: 80%;
+        max-width: 50%;
+        justify-content: start;
     }
 
     ul {
