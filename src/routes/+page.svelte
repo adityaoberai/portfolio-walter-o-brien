@@ -1,100 +1,92 @@
 <script>
-    import Available from '$lib/components/Available.svelte';
+	import Available from '$lib/components/Available.svelte';
 	import About from '$lib/components/About.svelte';
 	import Experience from '$lib/components/Experience.svelte';
-    import Skills from '$lib/components/Skills.svelte';
-    import Projects from '$lib/components/Projects.svelte';
-    import Articles from '$lib/components/Articles.svelte';
-    import Intro from '$lib/components/Intro.svelte';
+	import Skills from '$lib/components/Skills.svelte';
+	import Projects from '$lib/components/Projects.svelte';
+	import Articles from '$lib/components/Articles.svelte';
+	import Intro from '$lib/components/Intro.svelte';
 </script>
 
 <svelte:head>
-    <title>Walter O'Brien</title>
+	<title>Walter O'Brien</title>
 </svelte:head>
 
 <main>
-    <div class="intro-content">
-        <Intro />
-    </div>
-    <div class="resume-content">
-        <div class="left-column">
-            <div class="left-inner-top">
-                <div class="left-inner-top-inner-column">
-                    <Available />
-                </div>
-                <div class="left-inner-top-inner-column">
-                    <About />
-                </div>
-            </div>
-            <div class="left-inner-bottom">
-                <Experience />
-            </div>
-        </div>
-    
-        <div class="right-column">
-            <div class="right-inner-top">
-                <Skills />
-            </div>
-            <div class="right-inner-middle">
-                <Projects />
-            </div>
-            <div class="right-inner-bottom">
-                <Articles />
-            </div>
-        </div>
-    </div>
+	<div class="intro-content">
+		<Intro />
+	</div>
+	<div class="resume-content">
+		<div class="available-component">
+			<Available />
+		</div>
+		<div class="about-component">
+			<About />
+		</div>
+		<div class="experience-component">
+			<Experience />
+		</div>
+
+		<div class="right-column">
+			<div class="skills-component">
+				<Skills />
+			</div>
+			<div class="projects-component">
+				<Projects />
+			</div>
+			<div class="articles-component">
+				<Articles />
+			</div>
+		</div>
+	</div>
 </main>
 
 <style>
-    .intro-content, .resume-content {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        width: 90%;
-        margin: 0 auto;
-        height: max-content;
-    }
+	main {
+		width: 100%;
+		height: 100%;
+		margin: 2rem 0;
+	}
 
-    .resume-content {
-        justify-content: space-evenly;
-    }
+	.intro-content,
+	.resume-content {
+		width: 80%;
+		margin: 0 auto;
+	}
 
-    .left-column {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        width: 60%;
-    }
+	.intro-content {
+		display: flex;
+		flex-direction: row;
+		height: max-content;
+	}
 
-    .left-inner-top {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: auto;
-        height: 35%;
-        align-content: stretch;
-    }
+	.resume-content {
+		display: grid;
+		row-gap: 1rem;
+		column-gap: 1rem;
+	}
 
-    .left-inner-top-inner-column 
-    {
-        display: flex;
-        flex-direction: column;
-        width: 45%;
-        height: 100%;
-    }
+	.available-component {
+		grid-row: 1 / span 1;
+		grid-column: 1 / span 1;
+	}
 
-    .left-inner-bottom {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        align-content: stretch;
-    }
+	.about-component {
+		grid-row: 1 / span 1;
+		grid-column: 2 / span 1;
+	}
 
-    .right-column {
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-        justify-content: space-between;
-    }
+	.experience-component {
+		grid-row: 2 / span 2;
+		grid-column: 1 / span 2;
+	}
+
+	.right-column {
+		grid-row: 1 / span 3;
+		grid-column: 3 / span 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 1rem;
+	}
 </style>
