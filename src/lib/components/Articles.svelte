@@ -2,18 +2,18 @@
 	import { Typography, Button } from '@appwrite.io/pink-svelte';
 
 	const articles = [
-		{ 
-            title: 'The Role of AI in Modern Security Solutions', 
-            url: 'https://appwrite.io/blog'
-        },
-		{ 
-            title: 'High-Stakes Problem Solving: Lessons from Scorpion', 
-            url: 'https://appwrite.io/blog'
-        },
-		{ 
-            title: 'How Scenario Generation Can Predict Outcomes', 
-            url: 'https://appwrite.io/blog'
-        }
+		{
+			title: 'The Role of AI in Modern Security Solutions',
+			url: 'https://appwrite.io/blog'
+		},
+		{
+			title: 'High-Stakes Problem Solving: Lessons from Scorpion',
+			url: 'https://appwrite.io/blog'
+		},
+		{
+			title: 'How Scenario Generation Can Predict Outcomes',
+			url: 'https://appwrite.io/blog'
+		}
 	];
 </script>
 

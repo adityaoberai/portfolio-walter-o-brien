@@ -45,13 +45,13 @@
 				</div>
 				<div class="info">
 					<div class="info-text">
-                        <Typography.Title size="small">
-                            {company}
-                        </Typography.Title>
-                        <Typography.Text variant="m-500">
-                            {title}
-                        </Typography.Text>
-                    </div>
+						<Typography.Title size="small">
+							{company}
+						</Typography.Title>
+						<Typography.Text variant="m-500">
+							{title}
+						</Typography.Text>
+					</div>
 					<ul>
 						{#each description as desc}
 							<li>{desc}</li>
@@ -67,7 +67,7 @@
 	#experience {
 		display: flex;
 		flex-direction: column;
-        justify-content: start;
+		justify-content: start;
 	}
 
 	.jobs {
@@ -76,8 +76,8 @@
 		gap: 1.5rem;
 		width: 100%;
 		justify-content: start;
-        align-items: stretch;
-        justify-items: stretch;
+		align-items: stretch;
+		justify-items: stretch;
 	}
 
 	.job {
@@ -85,7 +85,7 @@
 		flex-direction: row;
 		gap: 1rem;
 		justify-content: space-between;
-        margin-bottom: 0.5rem;
+		margin-bottom: 0.5rem;
 	}
 
 	.time {
@@ -93,36 +93,36 @@
 	}
 
 	.info {
-        display: flex;
-        flex-direction: column;
+		display: flex;
+		flex-direction: column;
 		width: 66.67%;
 		justify-content: start;
-        gap: 0.75rem;
+		gap: 0.75rem;
 	}
 
-    .info-text {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-    }
+	.info-text {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
 
 	ul {
 		list-style-type: disc;
 		padding-inline-start: 1rem;
 	}
 
-    @media (max-width: 768px) {
-        .job {
-            flex-direction: column;
-            gap: 0.25rem;
-        }
+	@media (max-width: 768px) {
+		.job {
+			flex-direction: column;
+			gap: 0.25rem;
+		}
 
-        .time {
-            width: 100%;
-        }
+		.time {
+			width: 100%;
+		}
 
-        .info {
-            width: 100%;
-        }
-    }
+		.info {
+			width: 100%;
+		}
+	}
 </style>

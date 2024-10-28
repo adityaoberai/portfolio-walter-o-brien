@@ -5,17 +5,17 @@
 		{
 			title: 'ScenGen',
 			description: 'AI-powered scenario generation engine used in cybersecurity and healthcare',
-            url: 'https://github.com/appwrite/appwrite'
+			url: 'https://github.com/appwrite/appwrite'
 		},
 		{
 			title: 'Risk Management Platform',
 			description: 'Risk assessment tool created for financial and defense industries',
-            url: 'https://github.com/appwrite/appwrite'
+			url: 'https://github.com/appwrite/appwrite'
 		},
 		{
 			title: 'ConciergeUp Intelligence-as-a-Service',
 			description: 'Service offering personalized technical and strategic solutions',
-            url: 'https://github.com/appwrite/appwrite'
+			url: 'https://github.com/appwrite/appwrite'
 		}
 	];
 </script>

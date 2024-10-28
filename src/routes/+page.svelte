@@ -45,13 +45,13 @@
 	main {
 		width: 1440px;
 		height: 100%;
-        margin: auto 0;
+		margin: auto 0;
 	}
 
 	.intro-content,
 	.resume-content {
 		width: 80%;
-        height: 80%;
+		height: 80%;
 		margin: auto;
 	}
 
@@ -63,9 +63,9 @@
 
 	.resume-content {
 		display: grid;
-        grid-template-rows: 0.8fr 2.2fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        row-gap: 1.25rem;
+		grid-template-rows: 0.8fr 2.2fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		row-gap: 1.25rem;
 		column-gap: 1.25rem;
 	}
 
@@ -93,42 +93,42 @@
 		gap: 1rem;
 	}
 
-    @media (min-width: 1200px) and (max-width: 1440px) {
-        main {
-            width: 1200px;
-        }
-    }
+	@media (min-width: 1200px) and (max-width: 1440px) {
+		main {
+			width: 1200px;
+		}
+	}
 
-    @media (min-width: 768px) and (max-width: 1200px) {
-        main {
-            width: 90%;
-            padding: 2rem 0;
-            height: fit-content;
-        }
+	@media (min-width: 768px) and (max-width: 1200px) {
+		main {
+			width: 90%;
+			padding: 2rem 0;
+			height: fit-content;
+		}
 
-        .experience-component {
-            height: min-content;
-        }
+		.experience-component {
+			height: min-content;
+		}
 
-        .right-column {
-            justify-content: stretch;
-        }
-    }
+		.right-column {
+			justify-content: stretch;
+		}
+	}
 
-    @media (max-width: 768px) {
-        main {
-            width: 90%;
-            padding: 2rem 0;
-        }
+	@media (max-width: 768px) {
+		main {
+			width: 90%;
+			padding: 2rem 0;
+		}
 
-        .resume-content {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
+		.resume-content {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+		}
 
-        .right-column {
-            gap: 2rem;
-        }
-    }
+		.right-column {
+			gap: 2rem;
+		}
+	}
 </style>

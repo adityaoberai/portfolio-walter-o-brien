@@ -2,8 +2,8 @@
 	import { Typography, Button } from '@appwrite.io/pink-svelte';
 	import { IconLinkedin, IconGithub } from '@appwrite.io/pink-icons-svelte';
 
-    let linkedIn = 'https://www.linkedin.com/company/appwrite';
-    let github = 'https://github.com/appwrite/appwrite';
+	let linkedIn = 'https://www.linkedin.com/company/appwrite';
+	let github = 'https://github.com/appwrite/appwrite';
 </script>
 
 <section id="available" class="container">
