@@ -43,7 +43,7 @@
 
 <style>
 	main {
-		width: 100%;
+		width: 1440px;
 		height: 100%;
         margin: auto 0;
 	}
@@ -51,7 +51,8 @@
 	.intro-content,
 	.resume-content {
 		width: 80%;
-		margin: 0 auto;
+        height: 80%;
+		margin: auto;
 	}
 
 	.intro-content {
@@ -91,4 +92,43 @@
 		justify-content: space-between;
 		gap: 1rem;
 	}
+
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        main {
+            width: 1200px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+        main {
+            width: 90%;
+            padding: 2rem 0;
+            height: fit-content;
+        }
+
+        .experience-component {
+            height: min-content;
+        }
+
+        .right-column {
+            justify-content: stretch;
+        }
+    }
+
+    @media (max-width: 768px) {
+        main {
+            width: 90%;
+            padding: 2rem 0;
+        }
+
+        .resume-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .right-column {
+            gap: 2rem;
+        }
+    }
 </style>
