@@ -118,7 +118,6 @@
 	@media (max-width: 768px) {
 		main {
 			width: 90%;
-			padding: 2rem 0;
 		}
 
 		.resume-content {
