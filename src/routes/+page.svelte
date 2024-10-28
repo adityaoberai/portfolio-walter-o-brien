@@ -45,7 +45,7 @@
 	main {
 		width: 1440px;
 		height: 100%;
-		margin: auto 0;
+		margin: auto;
 	}
 
 	.intro-content,
@@ -125,6 +125,7 @@
 			display: flex;
 			flex-direction: column;
 			gap: 2rem;
+			width: 100%;
 		}
 
 		.right-column {
