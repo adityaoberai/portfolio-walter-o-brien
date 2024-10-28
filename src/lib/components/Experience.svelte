@@ -110,4 +110,19 @@
 		list-style-type: disc;
 		padding-inline-start: 1rem;
 	}
+
+    @media (max-width: 768px) {
+        .job {
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .time {
+            width: 100%;
+        }
+
+        .info {
+            width: 100%;
+        }
+    }
 </style>
