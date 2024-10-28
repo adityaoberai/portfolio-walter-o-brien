@@ -45,7 +45,7 @@
 	main {
 		width: 1440px;
 		height: 100%;
-		margin: auto 0;
+		margin: auto;
 	}
 
 	.intro-content,
@@ -118,12 +118,14 @@
 	@media (max-width: 768px) {
 		main {
 			width: 90%;
+			padding: 2rem 0;
 		}
 
 		.resume-content {
 			display: flex;
 			flex-direction: column;
 			gap: 2rem;
+			width: 100%;
 		}
 
 		.right-column {
