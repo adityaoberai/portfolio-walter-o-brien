@@ -2,9 +2,18 @@
 	import { Typography, Button } from '@appwrite.io/pink-svelte';
 
 	const articles = [
-		'The Role of AI in Modern Security Solutions',
-		'High-Stakes Problem Solving: Lessons from Scorpion',
-		'How Scenario Generation Can Predict Outcomes'
+		{ 
+            title: 'The Role of AI in Modern Security Solutions', 
+            url: 'https://appwrite.io/blog'
+        },
+		{ 
+            title: 'High-Stakes Problem Solving: Lessons from Scorpion', 
+            url: 'https://appwrite.io/blog'
+        },
+		{ 
+            title: 'How Scenario Generation Can Predict Outcomes', 
+            url: 'https://appwrite.io/blog'
+        }
 	];
 </script>
 
@@ -12,13 +21,13 @@
 	<Typography.Title size="medium">Articles</Typography.Title>
 	<div class="article-cards">
 		{#each articles as article}
-			<Button.Button variant="secondary" size="medium">
+			<Button.Anchor variant="secondary" size="medium" href={article.url}>
 				<div class="card">
 					<Typography.Title size="small">
-						{article}
+						{article.title}
 					</Typography.Title>
 				</div>
-			</Button.Button>
+			</Button.Anchor>
 		{/each}
 	</div>
 </section>

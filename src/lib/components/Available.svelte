@@ -1,6 +1,9 @@
 <script>
 	import { Typography, Button } from '@appwrite.io/pink-svelte';
 	import { IconLinkedin, IconGithub } from '@appwrite.io/pink-icons-svelte';
+
+    let linkedIn = 'https://www.linkedin.com/company/appwrite';
+    let github = 'https://github.com/appwrite/appwrite';
 </script>
 
 <section id="available" class="container">
@@ -16,14 +19,14 @@
 	</div>
 
 	<div class="social-buttons">
-		<Button.Button variant="secondary" size="medium">
+		<Button.Anchor variant="secondary" size="medium" href={linkedIn}>
 			<IconLinkedin />
 			LinkedIn
-		</Button.Button>
-		<Button.Button variant="secondary" size="medium">
+		</Button.Anchor>
+		<Button.Anchor variant="secondary" size="medium" href={github}>
 			<IconGithub />
 			GitHub
-		</Button.Button>
+		</Button.Anchor>
 	</div>
 </section>
 
